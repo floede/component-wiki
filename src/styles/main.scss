@@ -1,0 +1,17 @@
+@import "base/variables";
+@import "layout/navigation";
+@import "layout/content";
+
+#root {
+  max-width: $content-max-width;
+  margin: 0 auto;
+  padding: 0 $spacing-lg;
+}
+
+.wiki-container {
+  display: grid;
+  grid-template-columns: $nav-width 1fr $sidebar-width;
+  min-height: 100vh;
+  gap: $spacing-md;
+  padding: $spacing-md;
+}

@@ -1,0 +1,26 @@
+.content-area {
+  background: $color-white;
+  padding: $spacing-sm $spacing-xl;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  text-align: left;
+
+  h1{
+    margin: 0;
+  }
+
+  blockquote {
+    background: lighten($color-background, 2%);
+    border-left: 10px solid darken($color-background, 10%);
+    margin: 1.5em 10px;
+    padding: 1em 10px 0.1em;
+    p {
+      margin-top: 0;
+      margin-bottom: $spacing-sm;
+    }
+  }
+
+  code {
+    font-size: $font-size-lg;
+  }
+}

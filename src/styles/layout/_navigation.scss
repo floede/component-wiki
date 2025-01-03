@@ -1,0 +1,42 @@
+.wiki-navigation {
+  background: $color-background;
+  padding: $spacing-sm $spacing-md;
+  border-radius: $border-radius;
+
+  h2 {
+    margin-bottom: $spacing-md;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  h3 {
+    margin: $spacing-md 0 $spacing-sm;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  button {
+    width: 100%;
+    text-align: left;
+    padding: $spacing-sm;
+    margin: $spacing-xs 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: $border-radius;
+
+    &:hover {
+      background: darken($color-background, 5%);
+    }
+
+    &.active {
+      background: $color-primary;
+      color: $color-white;
+    }
+  }
+}
