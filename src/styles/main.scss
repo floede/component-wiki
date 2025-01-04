@@ -3,7 +3,7 @@
 @import "layout/content";
 
 #root {
-  max-width: $content-max-width;
+  width: $content-max-width;
   margin: 0 auto;
   padding: 0 $spacing-lg;
 }
