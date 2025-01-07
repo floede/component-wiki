@@ -2,12 +2,13 @@ import PropTypes from "prop-types";
 import { pages } from "../data/pages";
 
 function Navigation({ onPageSelect, currentPage }) {
+  const sortedPages = [...pages].sort((a, b) => a.title.localeCompare(b.title));
   return (
     <nav className="wiki-navigation">
       <h2>Documentation</h2>
       <h3>Overview</h3>
       <ul>
-        {pages
+        {sortedPages
           .filter((page) => page.type === "page")
           .map((page) => (
             <li key={page.id}>
@@ -22,7 +23,7 @@ function Navigation({ onPageSelect, currentPage }) {
       </ul>
       <h3>Components</h3>
       <ul>
-        {pages
+        {sortedPages
           .filter((page) => page.type === "component")
           .map((page) => (
             <li key={page.id}>
